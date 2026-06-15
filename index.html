@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NATO'S 21</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="C:\Users\loq\Desktop\New folder (4)\IMG_E9540.JPG"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="C:\Users\loq\Desktop\New folder (4)\IMG_E9540.JPG"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-bar">
+      <div class="profile-menu">
+        <button class="brand-photo-button" id="profileButton" type="button" aria-label="Open Natalie info">
+          <img
+            src="C:\Users\loq\Desktop\New folder (3)\IMG_9527.PNG"
+            alt="Natalie"
+          />
+        </button>
+
+        <div class="profile-panel" id="profilePanel" aria-hidden="true">
+          <h2>Natalie</h2>
+          <ul>
+            <li><strong>Age:</strong> 21</li>
+            <li><strong>Family:</strong> "LABIB'S FAMILY"</li>
+            <li><strong>Me:</strong> JOE</li>
+            <li><strong>Favorite things:</strong> SUSHI , 2OL2AS</li>
+            <li><strong>Birthday note:</strong> LOVE NATO</li>
+          </ul>
+        </div>
+      </div>
+
+      <nav class="nav-links" aria-label="Page sections">
+        <a href="#video">Video</a>
+        <a href="#favoriteSong">Song</a>
+        <a href="#invitation">Invitation</a>
+        <a href="#natos-private">Natos private</a>
+        <a href="#info">Info</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="bar-button" id="toggleFromNav" type="button">Open card</button>
+    </header>
+
+    <main class="birthday-site">
+      <section class="hero" id="invitation" aria-label="Birthday invitation card for Natalie">
+        <div class="hero-copy">
+          <p class="eyebrow">Private birthday invitation</p>
+          <h1>Happy Birthday, QUEEN NATO</h1>
+          <p>
+            I LOVE U MORE THAN YOU HAVE EVER IMAGINE 
+          </p>
+        </div>
+
+        <div class="invitation-wrap">
+          <div class="table-light"></div>
+
+          <button class="envelope" id="envelope" type="button" aria-label="Open invitation card" aria-expanded="false">
+            <span class="paper-shadow"></span>
+            <span class="envelope-back"></span>
+            <span class="letter">
+              <span class="letter-kicker">For my favorite person</span>
+              <span class="letter-title">Happy Birthday, Natalie</span>
+              <span class="letter-copy">
+                You are invited to a quiet little page made only for you. Open it, close it,
+                and keep whatever feels sweet.
+              </span>
+              <span class="wax-seal">N</span>
+            </span>
+            <span class="flap flap-left"></span>
+            <span class="flap flap-right"></span>
+            <span class="flap flap-bottom"></span>
+            <span class="flap flap-top"></span>
+          </button>
+
+          <button class="card-toggle" id="cardToggle" type="button" aria-expanded="false">Open invitation</button>
+        </div>
+      </section>
+
+      <section class="content-section" id="video" aria-label="Birthday video">
+        <div class="section-copy">
+          <p class="eyebrow">Video</p>
+          <h2>Birthday video</h2>
+          <p>
+           
+          </p>
+        </div>
+        <div class="video-container">
+          <div class="video-frame">
+            <video controls>
+              <source src="C:\Users\loq\Downloads\to nato style (1).mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section song-section" id="favoriteSong" aria-label="Our favorite song">
+        <div class="section-copy">
+          <p class="eyebrow">Favorite song</p>
+          <h2>Our favorite melody</h2>
+          <p>Tap play to hear the song and watch the disc spin with the music.</p>
+        </div>
+
+        <div class="song-grid">
+          <div class="song-player">
+            <div class="cd-frame" aria-hidden="true">
+              <div class="cd-disk" id="cdDisk"></div>
+            </div>
+
+            <div class="song-controls">
+              <div>
+                <strong>Favorite song</strong>
+                <p>Press play to start the audio. The rotating disc animates while the song plays.</p>
+              </div>
+              <button class="bar-button song-play-button" id="audioToggle" type="button">Play song</button>
+              <div class="song-status" id="songStatus">Paused</div>
+              <div class="song-progress-bar" aria-hidden="true">
+                <div class="song-progress" id="songProgress"></div>
+              </div>
+              <input
+                class="song-seekbar"
+                id="songSeek"
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+                step="0.1"
+                disabled
+                aria-label="Seek within favorite song"
+              />
+            </div>
+
+            <audio id="favoriteAudio" preload="auto">
+              <source src="C:\Users\loq\Downloads\Albumaty.com.Om.Kalsoum.Enta.3omry.mp3" type="audio/mpeg" />
+              Your browser does not support audio.
+            </audio>
+          </div>
+        </div>
+      </section>
+
+      <section class="private-section" id="natos-private" aria-label="Natos private section">
+        <div class="private-gate" id="privateGate">
+          <p class="eyebrow">Natos private</p>
+          <h2>One question first</h2>
+          <p>Type the answer to unlock the private birthday room.</p>
+          <form class="unlock-form" id="unlockForm">
+            <label for="unlockAnswer">What is the birthday girl name?</label>
+            <div class="unlock-row">
+              <input id="unlockAnswer" name="answer" type="text" autocomplete="off" placeholder="Type her name" />
+              <button type="submit">Unlock</button>
+            </div>
+            <span class="unlock-message" id="unlockMessage" aria-live="polite"></span>
+          </form>
+        </div>
+
+        <div class="private-room" id="privateRoom" aria-hidden="true">
+          <div class="section-copy">
+            <p class="eyebrow">Natos private</p>
+            <h2>some natosss</h2>
+      
+          </div>
+
+          <div class="private-frames" aria-label="Natalie private pictures">
+            <article class="memory-frame frame-big">
+              <img
+                src="C:\Users\loq\Desktop\New folder (3)\IMG_E9511.JPG"
+                alt="Random girl placeholder 1"
+              />
+              <span>Main picture</span>
+            </article> 
+            <article class="memory-frame">
+              <img
+                src="C:\Users\loq\Desktop\New folder (3)\IMG_9535.PNG"
+                alt="Random girl placeholder 2"
+              />
+              <span>Soft smile</span>
+            </article>
+            <article class="memory-frame">
+              <img
+                src="C:\Users\loq\Desktop\New folder (3)\IMG_9536.PNG"
+                alt="Random girl placeholder 3"
+              />
+              <span>Favorite look</span>
+            </article>
+            <article class="memory-frame">
+              <img
+                src="C:\Users\loq\Desktop\New folder (3)\IMG_9528.PNG"
+                alt="Random girl placeholder 4"
+              />
+              <span>Birthday mood</span>
+            </article>
+            <article class="memory-frame">
+              <img
+                src="C:\Users\loq\Desktop\New folder (3)\IMG_9531.PNG"
+                alt="Random girl placeholder 5"
+              />
+              <span>Pretty moment</span>
+            </article>
+          </div>
+
+          <div class="favorite-list">
+            <article class="favorite-card is-open">
+              <button class="favorite-toggle" type="button">
+                <span>Favorite foods</span>
+                <span>+</span>
+              </button>
+              <div class="favorite-body">
+                <button type="button">2OL2AS</button>
+                <button type="button">Sushi</button>
+                <button type="button">Asian food</button>
+                <button type="button">tarb</button>
+                 <button type="button">Tiramisu</button>
+              </div>
+            </article>
+
+            <article class="favorite-card">
+              <button class="favorite-toggle" type="button">
+                <span>Favorite drinks</span>
+                <span>+</span>
+              </button>
+              <div class="favorite-body">
+                <button type="button">Iced Spanish latte</button>
+                <button type="button">Mango flores juice</button>
+                <button type="button">French Coffee</button>
+                <button type="button">Hot chocolate</button>
+              </div>
+            </article>
+
+            <article class="favorite-card">
+              <button class="favorite-toggle" type="button">
+                <span>Favorite clothes</span>
+                <span>+</span>
+              </button>
+              <div class="favorite-body">
+                <button type="button">Polo T-shirt</button>
+                <button type="button">elbantalon elsa2et</button>
+                <button type="button">Diamond</button>
+                <button type="button"></button>
+              </div>
+            </article>
+
+            <article class="favorite-card">
+              <button class="favorite-toggle" type="button">
+                <span>More about her</span>
+                <span>+</span>
+              </button>
+              <div class="favorite-body">
+                <button type="button">PINK</button>
+                <button type="button">ya laily</button>
+                <button type="button">Italy</button>
+                <button type="button">wish to be together all the time </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-stage" id="galleryStage" aria-label="Photo memories">
+        <div class="gallery-header">
+          <p class="eyebrow">Memories</p>
+          <h2>Our moments, one photo at a time</h2>
+        </div>
+
+        <div class="photo-theater">
+          <div class="photo-stack" id="photoStack" aria-live="polite">
+            <article class="photo-card is-current">
+              <img
+                src="C:\Users\loq\Desktop\New folder (3)\IMG_9509.PNG"
+                alt="Placeholder couple photo 1"
+              />
+              <p>First picture of us</p>
+            </article>
+            <article class="photo-card">
+              <img
+                src="C:\Users\loq\Desktop\New folder (3)\IMG_9510.PNG"
+                alt="Placeholder couple photo 2"
+              />
+              <p>Second picture of us</p>
+            </article>
+            <article class="photo-card">
+              <img
+                src="C:\Users\loq\Desktop\New folder (3)\IMG_9511.PNG"
+                alt="Placeholder couple photo 3"
+              />
+              <p>kan yom gameeeeeeeel gdnnnnn</p>
+            </article>
+            <article class="photo-card">
+              <img
+                src="C:\Users\loq\Desktop\New folder (3)\IMG_9514.PNG"
+                alt="Placeholder couple photo 4"
+              />
+              <p>aktr sora b7bha leya ana w natolty</p>
+            </article>
+             <article class="photo-card">
+              <img
+                src="C:\Users\loq\Desktop\New folder (3)\IMG_9519.PNG"
+                alt="Placeholder couple photo 3"
+              />
+              <p>awel eid sawaaaaaaaaa</p>
+            </article>
+             <article class="photo-card">
+              <img
+                src="C:\Users\loq\Desktop\New folder (3)\IMG_9515.PNG"
+                alt="Placeholder couple photo 3"
+              />
+              <p>First date</p>
+            </article>
+             <article class="photo-card">
+              <img
+                src="C:\Users\loq\Desktop\New folder (3)\IMG_9516.PNG"
+                alt="Placeholder couple photo 3"
+              />
+              <p>w b3den b2aaa</p>
+            </article>
+             <article class="photo-card">
+              <img
+                src="C:\Users\loq\Desktop\New folder (3)\IMG_9521.PNG"
+                alt="Placeholder couple photo 3"
+              />
+              <p>tany eid sawaa</p>
+            </article>
+             <article class="photo-card">
+              <img
+                src="C:\Users\loq\Desktop\New folder (3)\IMG_9522.PNG"
+                alt="Placeholder couple photo 3"
+              />
+              <p>a7la mofag2a</p>
+            </article>
+             <article class="photo-card">
+              <img
+                src="C:\Users\loq\Desktop\New folder (3)\IMG_9526.PNG"
+                alt="Placeholder couple photo 3"
+              />
+              <p>maktaba date</p>
+            </article>
+             <article class="photo-card">
+              <img
+                src="C:\Users\loq\Desktop\New folder (3)\IMG_9528.PNG"
+                alt="Placeholder couple photo 3"
+              />
+              <p>nato el3sllll</p>
+            </article>
+               <article class="photo-card">
+              <img
+                src="C:\Users\loq\Desktop\New folder (3)\IMG_9531.PNG"
+                alt="Placeholder couple photo 3"
+              />
+              <p>strongest nato</p>
+            </article>
+               <article class="photo-card">
+              <img
+                src="C:\Users\loq\Desktop\New folder (3)\IMG_9532.PNG"
+                alt="Placeholder couple photo 3"
+              />
+              <p>Dunkin date</p>
+            </article>
+               <article class="photo-card">
+              <img
+                src="C:\Users\loq\Desktop\New folder (3)\IMG_9530.PNG"
+                alt="Placeholder couple photo 3"
+              />
+              <p>nfsy a3rf ezay awel mara ashof elsora dih w natola me7laweya feha awy kda bgdddd</p>
+            </article>
+                <article class="photo-card">
+              <img
+                src="C:\Users\loq\Desktop\New folder (3)\IMG_9533.PNG"
+                alt="Placeholder couple photo 3"
+              />
+              <p>ezaayyyy el ed elso8ayara dihhh bt3ml kol el akl elto77fa  daa</p>
+            </article>
+                           <article class="photo-card">
+              <img
+                src="C:\Users\loq\Desktop\New folder (3)\IMG_9534.PNG"
+                alt="Placeholder couple photo 3"
+              />
+              <p>talet eid saw ya gama3a w lsa mekameleeeeeeeeeen</p>
+            </article>
+                           <article class="photo-card">
+              <img
+                src="C:\Users\loq\Desktop\New folder (3)\IMG_9535.PNG"
+                alt="Placeholder couple photo 3"
+              />
+              <p>elrabe33333</p>
+            </article>
+                           <article class="photo-card">
+              <img
+                src="C:\Users\loq\Desktop\New folder (3)\IMG_E9523.JPG"
+                alt="Placeholder couple photo 3"
+              />
+              <p>MEOW</p>
+            </article>
+                           <article class="photo-card">
+              <img
+                src="C:\Users\loq\Desktop\New folder (3)\IMG_E9524.JPG"
+                alt="Placeholder couple photo 3"
+              />
+              <p>MEOW</p>
+            </article>
+                           <article class="photo-card">
+              <img
+                src="C:\Users\loq\Desktop\New folder (3)\IMG_E9525.JPG"
+                alt="Placeholder couple photo 3"
+              />
+              <p>TB YA GAMA3AAAA EZAY EL AMAR DA BYZ322 BGDDD???</p>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="gallery-controls">
+          <button class="icon-button" id="prevButton" type="button" aria-label="Previous photo">
+            &lsaquo;
+          </button>
+          <div class="dots" id="dots" aria-label="Photo progress"></div>
+          <button class="icon-button" id="nextButton" type="button" aria-label="Next photo">
+            &rsaquo;
+          </button>
+        </div>
+      </section>
+
+      <section class="content-section info-section" id="info" aria-label="Natalie information">
+        <div class="section-copy">
+          <p class="eyebrow">Info</p>
+          <h2>Details about Natalie</h2>
+          
+        </div>
+        <div class="info-grid">
+          <article>
+            <h3>Her age</h3>
+            <p>21 yrs</p>
+          </article>
+          <article>
+            <h3>Her family</h3>
+            <p>LABIB'S</p>
+          </article>
+          <article>
+            <h3>Us</h3>
+            <p>FUTURE WIFE.</p>
+          </article>
+          <article>
+            <h3>More</h3>
+            <p>LOVE U NATO</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section contact-section" id="contact" aria-label="Contact me">
+        <div class="section-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>Send me a message</h2>
+          <p>TEXT ME DARLINNG .</p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <label for="whatsappMessage">Message</label>
+          <textarea
+            id="whatsappMessage"
+            name="message"
+            rows="6"
+            placeholder="Write your message here..."
+          ></textarea>
+          <button type="submit">Send on WhatsApp</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
